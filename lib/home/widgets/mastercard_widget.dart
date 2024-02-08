@@ -77,7 +77,11 @@ class MastercardWidget extends StatelessWidget {
                         width: cardWidth * 0.45,
                         height: cardHeight * 0.2,
                         child: MaterialButton(
-                          onPressed: () {},
+                          onPressed: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => const ExchangePage(),
+                            ),
+                          ),
                           color: AppColors.buttonColor,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16),
