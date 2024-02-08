@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'app_colors.dart';
+import 'home/home_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -9,27 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter4Fun',
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Flutter4Fun'),
-      ),
-      body: const Center(
-        child: Text(
-          'Welcome to Flutter4Fun',
-          style: TextStyle(fontSize: 24),
-        ),
+    return MaterialApp(
+      home: const MyHomePage(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Jakarta',
+        scaffoldBackgroundColor: AppColors.bgColor,
+        brightness: Brightness.dark,
       ),
     );
   }
