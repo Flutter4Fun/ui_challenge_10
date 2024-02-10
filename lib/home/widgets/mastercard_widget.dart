@@ -78,7 +78,7 @@ class MastercardWidget extends StatelessWidget {
                         height: cardHeight * 0.2,
                         child: MaterialButton(
                           onPressed: () => Navigator.of(context).push(
-                            MaterialPageRoute(
+                            FadeRoute(
                               builder: (context) => const ExchangePage(),
                             ),
                           ),

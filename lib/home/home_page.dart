@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_challenge_10/app_colors.dart';
 import 'package:ui_challenge_10/exchange/exchange_page.dart';
+import 'package:ui_challenge_10/fade_route.dart';
 
 part 'widgets/mastercard_widget.dart';
 
